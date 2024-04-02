@@ -1,0 +1,13 @@
+{
+    "title": "Introducción a los videojuegos - Entrega 1",
+    "size": {
+        "w": 1080,
+        "h": 920
+    },
+    "bg_color": {
+        "r": 100,
+        "g": 100,
+        "b": 100
+    },
+    "framerate": 60
+}
