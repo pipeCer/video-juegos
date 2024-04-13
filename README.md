@@ -1,6 +1,6 @@
 # Introducción al desarrollo de videojuegos
 Prácticas de la asignatura de Introducción al desarrollo de videojuegos que consiste en la generación de rectángulos con colores
-predefinidos en el archivo `enemies.json`. Los rectángulos aparecerán en la posición definida en el archivo `level_01.json` 
+predefinidos en el archivo `enemies.json`. Los rectángulos aparecerán en la posición definida en el archivo `level_01.json`
 y se moverán en una dirección aleatoria. De igual manera, la configuración general de la pantalla se encuentra en el archivo
 `window.json`.
 

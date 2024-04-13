@@ -1,5 +1,4 @@
 class CMetadata:
-
     def __init__(self, name: str, spawn_time: int):
         self.name = name
         self.spawn_time = spawn_time

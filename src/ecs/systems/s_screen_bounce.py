@@ -11,7 +11,7 @@ def system_screen_bounce(world: esper.World, screen: pygame.Surface):
 
     for entity, enemies in components:
         for enemy in enemies.enemies:
-            surface, transform, speed, _ = enemy
+            surface, transform, speed, _, _ = enemy
 
             c_speed = speed
             c_transform = transform

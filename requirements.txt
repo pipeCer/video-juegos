@@ -1,4 +1,4 @@
-pygame-ce
 esper
+pygame-ce
 pygbag
 pyinstaller

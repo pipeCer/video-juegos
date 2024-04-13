@@ -8,5 +8,5 @@ def system_enemy_spawner(world: esper.World, current_time: float, screen):
 
     for entity, enemies in components:
         for enemy in enemies.enemies:
-            if current_time >= enemy[-1].spawn_time:
-                system_rendering(world, screen, enemy[-1].name)
+            if current_time >= enemy[-2].spawn_time:
+                system_rendering(world, screen, enemy[-2].name)
