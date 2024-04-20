@@ -26,15 +26,15 @@ def system_movement_player(world: esper.World, delta_time: float, screen: pygame
     for entity, (player_speed, player_transform, surface, _) in components:
         player_transform.position.x += player_speed.speed.x * delta_time
         player_transform.position.y += player_speed.speed.y * delta_time
-
+        width, height = surface.area.size
         if player_transform.position.x < 0:
             player_transform.position.x = 0
-        if player_transform.position.x > screen.get_width() - surface.surface.get_width():
-            player_transform.position.x = screen.get_width() - surface.surface.get_width()
+        if player_transform.position.x > screen.get_width() - width:
+            player_transform.position.x = screen.get_width() - width
         if player_transform.position.y < 0:
             player_transform.position.y = 0
-        if player_transform.position.y > screen.get_height() - surface.surface.get_height():
-            player_transform.position.y = screen.get_height() - surface.surface.get_height()
+        if player_transform.position.y > screen.get_height() - height:
+            player_transform.position.y = screen.get_height() - height
 
 
 def system_movement_bullet(world: esper.World, delta_time: float, screen: pygame.Surface):

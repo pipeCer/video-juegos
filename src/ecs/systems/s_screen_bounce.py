@@ -2,6 +2,7 @@ import pygame
 
 import esper
 from src.ecs.components.c_enemy_spawner import CEnemySpawner
+from src.utils import get_relative_area
 
 
 def system_screen_bounce(world: esper.World, screen: pygame.Surface):
@@ -17,7 +18,7 @@ def system_screen_bounce(world: esper.World, screen: pygame.Surface):
             c_transform = transform
             c_surface = surface
 
-            surface_rect = c_surface.surface.get_rect(topleft=c_transform.position)
+            surface_rect = get_relative_area(c_surface.area, c_transform.position)
 
             if not screen_rect.contains(surface_rect):
                 if surface_rect.left < 0 or surface_rect.right > screen_rect.right:

@@ -1,54 +1,46 @@
 {
     "TypeA": {
-        "size": {
-            "x": 10,
-            "y": 10
-        },
-        "color": {
-            "r": 100,
-            "g": 255,
-            "b": 255
-        },
-        "velocity_min": 40,
-        "velocity_max": 80
+        "image": "assets/img/asteroid_01.png",
+        "velocity_min": 80,
+        "velocity_max": 90
     },
     "TypeB": {
-        "size": {
-            "x": 20,
-            "y": 20
-        },
-        "color": {
-            "r": 255,
-            "g": 100,
-            "b": 255
-        },
-        "velocity_min": 50,
-        "velocity_max": 50
+        "image": "assets/img/asteroid_02.png",
+        "velocity_min": 100,
+        "velocity_max": 110
     },
     "TypeC": {
-        "size": {
-            "x": 30,
-            "y": 30
-        },
-        "color": {
-            "r": 255,
-            "g": 255,
-            "b": 100
-        },
-        "velocity_min": 40,
-        "velocity_max": 40
+        "image": "assets/img/asteroid_03.png",
+        "velocity_min": 150,
+        "velocity_max": 160
     },
     "TypeD": {
-        "size": {
-            "x": 40,
-            "y": 40
+        "image": "assets/img/asteroid_04.png",
+        "velocity_min": 170,
+        "velocity_max": 180
+    },
+    "Hunter": {
+        "image": "assets/img/enemy.png",
+        "animations": {
+            "number_frames": 6,
+            "list": [
+                {
+                    "name": "MOVE",
+                    "start": 0,
+                    "end": 5,
+                    "framerate": 10
+                },
+                {
+                    "name": "IDLE",
+                    "start": 0,
+                    "end": 0,
+                    "framerate": 1
+                }
+            ]
         },
-        "color": {
-            "r": 100,
-            "g": 255,
-            "b": 100
-        },
-        "velocity_min": 40,
-        "velocity_max": 40
+        "velocity_chase": 75,
+        "velocity_return": 100,
+        "distance_start_chase": 100,
+        "distance_start_return": 200
     }
 }

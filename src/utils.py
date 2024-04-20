@@ -1,11 +1,14 @@
 import json
 
+import pygame
+
 FILE_PATH_MAP = {
     "window": "./assets/cfg/window.json",
     "level": "./assets/cfg/level_01.json",
     "enemies": "./assets/cfg/enemies.json",
     "player": "./assets/cfg/player.json",
     "bullet": "./assets/cfg/bullet.json",
+    "explosion": "./assets/cfg/explosion.json",
 }
 
 
@@ -32,3 +35,9 @@ def validate_position(x, y, bounds_size, offset):
     x = x if x < bounds_size[0] - offset[0] else bounds_size[0] - offset[0]
     y = y if y < bounds_size[1] - offset[1] else bounds_size[1] - offset[1]
     return x, y
+
+
+def get_relative_area(area: pygame.Rect, pos_topleft: pygame.Vector2):
+    new_rect = area.copy()
+    new_rect.topleft = pos_topleft
+    return new_rect

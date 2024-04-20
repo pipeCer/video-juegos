@@ -1,13 +1,45 @@
 {
     "player_spawn": {
         "position": {
-            "x": 380,
-            "y": 185
+            "x": 300,
+            "y": 250
         },
-        "max_bullets": 10
+        "max_bullets": 3
 
     },
     "enemy_spawn_events": [
+        {
+            "time": 0.0,
+            "enemy_type": "Hunter",
+            "position": {
+                "x": 300,
+                "y": 10
+            }
+        },
+        {
+            "time": 0.0,
+            "enemy_type": "Hunter",
+            "position": {
+                "x": 300,
+                "y": 450
+            }
+        },
+        {
+            "time": 0.0,
+            "enemy_type": "Hunter",
+            "position": {
+                "x": 10,
+                "y": 230
+            }
+        },
+        {
+            "time": 0.0,
+            "enemy_type": "Hunter",
+            "position": {
+                "x": 550,
+                "y": 230
+            }
+        },
         {
             "time": 0,
             "enemy_type": "TypeA",
